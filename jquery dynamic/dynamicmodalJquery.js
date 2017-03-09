@@ -22,11 +22,11 @@ function doModal(heading, formContent) {
     html += '</div>';  // modalWindow
     $('body').append(html);
     $("#dynamicModal").modal();
-    $("#dynamicModal").modal('show');
+  //  $("#dynamicModal").modal('show');
 
-    $('#dynamicModal').on('hidden.bs.modal', function (e) {
-        $(this).remove();
-    });
+    // $('#dynamicModal').on('hidden.bs.modal', function (e) {
+    //     $(this).remove();
+    // });
 
 }
 
@@ -37,6 +37,6 @@ function doModal(heading, formContent) {
 	alert("hi")
 	var header = "This is my dynamic header";
 var content = "This is my dynamic content";
-doModal('idMyModal', header, content);
+doModal(header, content);
 
 })
